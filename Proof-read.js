@@ -8,3 +8,6 @@ Write a function which will:
 
 Example: He haD iEght ShOTs of CAffIEne. --> He had eight shots of caffeine.
 */
+
+
+// Solution
