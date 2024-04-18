@@ -24,3 +24,9 @@ function proofread (str) {
 } 
 
 // or
+
+function proofread(str) { 
+  return str.toLowerCase()
+    .replace(/ie/g, "ei")
+    .replace(/(^|\. )(.)/g, (_, a, b) => a + b.toUpperCase())
+}
