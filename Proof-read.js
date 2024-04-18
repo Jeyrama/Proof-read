@@ -11,3 +11,14 @@ Example: He haD iEght ShOTs of CAffIEne. --> He had eight shots of caffeine.
 
 
 // Solution
+
+function proofread (str) { 
+  str = str.replace(/ie/gi, 'ei');
+  str = str.charAt(0).toUpperCase() + str.slice(1, str.length).toLowerCase();
+  for ( i = 0; i < str.length; i++){
+    if ( str.charAt(i) == '.' ){
+        str = str.slice(0, i+2) + str.slice(i+2, i+3).toUpperCase() + str.slice(i+3, str.length)
+    }
+  };
+  return str
+} 
